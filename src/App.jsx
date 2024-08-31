@@ -10,7 +10,7 @@ function App() {
     <>
     <Nav/>
     <AnimatePresence mode='wait'>
-      <Routes location={location} key={location.key}>
+      <Routes basename='/SkyTrack-Drones' location={location} key={location.key}>
           <Route path="/" element={<HeroImgCanvas/>}/>
           <Route path="/service" element={<Service/>}/>
       </Routes>

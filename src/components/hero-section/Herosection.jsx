@@ -12,7 +12,7 @@ import { useNavigate } from "react-router-dom";
 import Loading from "../loading/Loading";
 
 const Herosection = () => {
-  const { scene, animations } = useGLTF("/assets/buster_drone/scene.gltf");
+  const { scene, animations } = useGLTF("assets/buster_drone/scene.gltf");
   const { actions } = useAnimations(animations, scene);
 
   if (actions) {
