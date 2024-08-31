@@ -617,25 +617,25 @@ const Service = () => {
     [
       "Drone Sales and Customization",
       "Drone stores typically offer a wide range of drones for different uses, including hobby drones, professional-grade drones for photography and videography, and specialized drones for industrial applications. They often provide customization options such as camera upgrades, enhanced flight control, or added sensors to meet specific customer needs. With knowledgeable staff, customers can get expert advice on choosing the right drone for their budget and requirements.",
-      "/assests/drone-flying-clouds.jpg",
+      "assets/drone-flying-clouds.jpg",
     ],
 
     [
       "Drone Repair and Maintenance",
       "To keep drones in optimal working condition, many stores provide comprehensive repair and maintenance services. This includes diagnostics, fixing hardware issues like motor or gimbal damage, and software updates. Regular maintenance services such as battery replacements, propeller checks, and firmware upgrades ensure that drones continue to function properly and have a long lifespan, enhancing customer trust and satisfaction.",
-      "/assests/stock-aerial-video-creator-photographer-prepares-drone-flight.jpg",
+      "assets/stock-aerial-video-creator-photographer-prepares-drone-flight.jpg",
     ],
 
     [
       "Drone Pilot Training and Certification",
       "Many stores offer training programs to help new drone owners learn how to fly their drones safely and legally. This includes both basic and advanced flight skills, safety protocols, and guidelines for operating drones in compliance with local regulations. For professionals, stores may also assist in obtaining the necessary certifications, such as FAA Part 107, which is required for commercial drone use in many countries.",
-      "/assests/delivery-robot-futuristic-environment.jpg",
+      "assets/delivery-robot-futuristic-environment.jpg",
     ],
 
     [
       "Aerial Photography and Videography Services",
       "In addition to selling drones, stores often offer aerial photography and videography services for events, real estate, agriculture, and more. These services are performed by professional drone pilots who use high-quality drones equipped with advanced cameras to capture stunning aerial shots. This service is ideal for clients who need professional-grade footage but don't want to invest in a drone or learn to operate one themselves.",
-      "/assests/professional-drone-pilot-stock-photographer.jpg",
+      "assets/professional-drone-pilot-stock-photographer.jpg",
     ],
   ];
 
@@ -664,15 +664,17 @@ const Service = () => {
                   xl={6}
                   xxl={4}
                   className="fluid"
+                  key={info[0]}
                 >
-                  <motion.div  initial={{ x: -50,opacity:0 }} animate={{ x: 0,opacity:1,transition:{delay:ind,duration:1.5} }} >
-                    <Tilt options={tiltOptions}>
+                  <motion.div   initial={{ x: -50,opacity:0 }} animate={{ x: 0,opacity:1,transition:{delay:ind,duration:1.5} }} >
+                    <Tilt  options={tiltOptions}>
                       <Card
                         style={{
                           background: "transparent",
                           border: "2px solid grey",
                         }}
                         className="m-1 p-3"
+                        
                       >
                         <Card.Img src={info[2]} />
                         <Card.Body>
